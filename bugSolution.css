@@ -1,0 +1,23 @@
+To resolve this issue, ensure a clear understanding of CSS specificity and inheritance.  Re-order the CSS rules based on specificity, making sure that the intended styles are applied.   For example, you might adjust the CSS to:
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+div p {
+  color: green;
+}
+
+/* Add an id or class for more clarity if you wish to target specific divs
+#specificDiv p {
+  color:purple;
+}
+*/
+```
+
+In the adjusted CSS we define the div, then p elements and finally how it should apply when a paragraph element is nested inside the div element. The correct specificity should be used to avoid style overriding.
